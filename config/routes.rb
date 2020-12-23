@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 	root "articles#index"
 	get "/exercises", to: "exercises#index"
+	get "/exercises/:id", to: "exercises#show"
 	get "/exercises_more", to: "exercises#index2"
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 
