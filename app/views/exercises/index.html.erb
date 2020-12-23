@@ -2,9 +2,9 @@
 <p>Do you want to know more about exercises</p>
 
 <ul>
-	<% @articles.each do |article| %>
+	<% @exercises.each do |exercise| %>
 	<li>
-		<%= link_to article.name, article %>
+		<%= link_to exercise.name, exercise %>
 	</li>
 	<% end %>
 </ul>	
