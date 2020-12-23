@@ -4,7 +4,9 @@
 <ul>
 	<% @exercises.each do |exercise| %>
 	<li>
-		<%= link_to exercise.name, exercise %>
+		<a href="/exercises/<%= exercise.id %>">
+			<%= exercise.title %>
+		</a>
 	</li>
 	<% end %>
 </ul>	
