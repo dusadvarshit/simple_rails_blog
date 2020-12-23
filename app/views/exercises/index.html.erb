@@ -1,2 +1,10 @@
 <h1>Hello Gym goers</h1>
 <p>Do you want to know more about exercises</p>
+
+<ul>
+	<% @articles.each do |article| %>
+	<li>
+		<%= article.title %>
+	</li>
+	<% end %>
+</ul>	
